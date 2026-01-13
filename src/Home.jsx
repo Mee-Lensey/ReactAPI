@@ -17,7 +17,7 @@ const Home=()=>{
         .then(res=>{
             //make the name and description your own fictional company
             let companyName = "Action Movies";
-            let CompanyDesc= 
+            let CompanyDesc= " We provide action packed movies for kids."
             console.log('Response from Main API:' ,res);
             console.log('Colors Data:', res.data.data);
 
@@ -31,8 +31,9 @@ const Home=()=>{
     
     return(
         <>
-       
-        <Colors/>
+        <h1>{Data.Company}</h1>
+        <p>{Data.Description}</p>
+        <Colors data = {colorsData}/>
 
         </>
     )
